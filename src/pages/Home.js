@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div id='home' className='text-gray-100 flex items-center justify-center w-3/4 min-h-screen gap-14'>
       <div className='relative flex justify-center w-1/3'>
-        <img src={mainImg} alt='headshot' className='grayscale'/>
+        <img src={mainImg} alt='headshot'/>
         <div
           className="absolute inset-0"
           style={gradientMaskStyle}

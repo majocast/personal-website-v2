@@ -1,5 +1,4 @@
 import './App.css';
-import { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import About from './pages/About';
 import Experience from './pages/Experience';

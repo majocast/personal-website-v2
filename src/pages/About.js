@@ -73,9 +73,9 @@ const About = () => {
           {techs.map(tech => {
             const TechIcon = tech.symbol;
             return (
-              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 hover:text-[#E0A526]'>
-                <TechIcon className='text-8xl' title={tech.name}/>
-                <h1>{tech.name}</h1>
+              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
+                <TechIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
+                <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
               </div>
             )
           })}

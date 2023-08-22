@@ -6,7 +6,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className='flex p-2 bg-[#0d0d0d] fixed top-0 flex w-full justify-between z-10 text-gray-100 text-2xl uppercase'>
+    <nav className='flex py-2 px-4 bg-[#0d0d0d] fixed top-0 flex w-full justify-between z-10 text-gray-100 text-2xl uppercase'>
       <h1 className='p-1'>Marc Castro</h1>
       <div className='flex space-x-4'>
         {contents.map((page) => {
