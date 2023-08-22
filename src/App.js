@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <NavBar className='flex flex-shrink-0' />
-          <div className='flex-grow pt-20'>
+          <div className='flex-grow flex flex-col items-center justify-center'>
             <Home />
             <About />
             <Experience />
