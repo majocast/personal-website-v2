@@ -69,7 +69,7 @@ const About = () => {
       </div>
       <div className='flex flex-col w-full items-center justify-center gap-6'>
         <h1 className='text-[#E0A526] text-3xl uppercase'>Technologies</h1>
-        <div className='grid grid-cols-11 gap-8 items-center'>
+        <div className='flex w-9/10 gap-8 items-center'>
           {techs.map(tech => {
             const TechIcon = tech.symbol;
             return (

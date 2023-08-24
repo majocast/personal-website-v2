@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <section className='flex flex-col text-3xl gap-4 pt-4 pb-4'>
         <h1 className='text-7xl'>MARC CASTRO</h1>
-        <h2 className='text-4xl'>UX/UI Designer & Developer</h2>
+        <h2 className='text-4xl'>Full Stack Developer</h2>
         <p className='text-2xl'>Los Angeles born, San Francisco based.</p>
         <div className='flex gap-2'>
           <button className='transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 bg-[#E0A526] text-[#0d0d0d] border-2 border-[#E0A526] hover:bg-[#0d0d0d] hover:text-gray-100'>Hire Me</button> 
