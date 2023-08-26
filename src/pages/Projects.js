@@ -19,20 +19,6 @@ import {
 } from 'react-icons/bi';
 
 const Projects = () => {
-  const techs = [
-    {symbol: BiLogoMongodb, name: 'MongoDB'},
-    {symbol: SiExpress, name: 'Express'},
-    {symbol: BiLogoReact, name: 'React'},
-    {symbol: BiLogoNodejs, name: 'Node.js'},
-    {symbol: BiLogoHtml5, name: 'HTML5'},
-    {symbol: BiLogoCss3, name: 'CSS3'},
-    {symbol: BiLogoJavascript, name: 'JavaScript'},
-    {symbol: BiLogoBootstrap, name: 'Bootstrap'},
-    {symbol: BiLogoTailwindCss, name: 'Tailwind CSS'},
-    {symbol: SiAxios, name: 'Axios'},
-    {symbol: SiRender, name: 'Render'},
-  ];
-
   const projects = [
     {img: myPortfolio, href: 'https://marccastro.onrender.com', github: 'https://github.com/majocast/personal-website', techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoTailwindCss], name: 'marccastro.onrender.com', desc: 'A solo-developed personal portfolio to showcase my identity, accomplishments, and selected projects. Process included sketches, rough drafting, quality assurance and user central design review via having colleagues, recruiters and advisors navigate the website.'},
     {img: onTheGrind, href: 'https://onthegrind.onrender.com', github: 'https://github.com/majocast/OnTheGrind-React', techs: [BiLogoMongodb, SiExpress, BiLogoReact, BiLogoNodejs, BiLogoJavascript, SiAxios, BiLogoHtml5, BiLogoTailwindCss], name: 'On The Grind', desc: 'A full stack e-commerce website that allows users to view the products that the company known as "On The Grind" have to offer! Users can navigate the page, sign in or create an account, add items to their cart, place an order, and so much more.'},
