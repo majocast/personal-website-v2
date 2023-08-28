@@ -51,8 +51,8 @@ const About = () => {
   ]
 
   return (
-    <div id='about' className='text-gray-100 flex flex-col w-9/10 min-h-screen gap-52'>
-      <div className='flex w-full items-center gap-4 justify-center'>
+    <div id='about' className='text-gray-100 flex flex-col w-9/10 min-h-screen'>
+      <div className='flex w-full min-h-screen items-center gap-4 justify-center'>
         <div className='flex flex-col w-1/2 gap-2'>
           <h1 className='text-[#E0A526] text-4xl uppercase'>About Me</h1>
           <p className='text-xl'>
@@ -91,55 +91,65 @@ const About = () => {
           <img src={gradPhoto} alt='headshot' className='rounded-xl pr-4 pb-4'/>
         </div>
       </div>
-      <div className='flex flex-col w-full items-center justify-center gap-6'>
+      <div className='flex flex-col items-center justify-center gap-4'>
         <h1 className='text-[#E0A526] text-3xl uppercase'>Technologies I've Used</h1>
-        <h1 className='text-[#E0A526] text-3xl uppercase'>Frontend</h1>
-        <div className='flex w-9/10 gap-8 items-center'>
-          {frontend.map(tech => {
-            const FrontIcon = tech.symbol;
-            return (
-              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                <FrontIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-              </div>
-            )
-          })}
-        </div>
-        <h1 className='text-[#E0A526] text-3xl uppercase'>Backend</h1>
-        <div className='flex w-9/10 gap-8 items-center'>
-          {backend.map(tech => {
-            const BackIcon = tech.symbol;
-            return (
-              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                <BackIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-              </div>
-            )
-          })}
-        </div>
-        <h1 className='text-[#E0A526] text-3xl uppercase'>Languages</h1>
-        <div className='flex w-9/10 gap-8 items-center'>
-          {languages.map(tech => {
-            const LangIcon = tech.symbol;
-            return (
-              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                <LangIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-              </div>
-            )
-          })}
-        </div>
-        <h1 className='text-[#E0A526] text-3xl uppercase'>Tools and DevOps</h1>
-        <div className='flex w-9/10 gap-8 items-center'>
-          {toolsanddevs.map(tech => {
-            const ToolsIcon = tech.symbol;
-            return (
-              <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                <ToolsIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-              </div>
-            )
-          })}
+        <div className='grid grid-cols-2 gap-4'>
+          <div className='flex flex-col'>
+            <h1 className='text-white text-3xl uppercase text-center'>Frontend</h1>
+            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
+              {frontend.map(tech => {
+                const FrontIcon = tech.symbol;
+                return (
+                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
+                    <FrontIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
+                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <h1 className='text-white text-3xl uppercase text-center'>Backend</h1>
+            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
+              {backend.map(tech => {
+                const BackIcon = tech.symbol;
+                return (
+                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
+                    <BackIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
+                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <h1 className='text-white text-3xl uppercase text-center'>Languages</h1>
+            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
+              {languages.map(tech => {
+                const LangIcon = tech.symbol;
+                return (
+                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
+                    <LangIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
+                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <h1 className='text-white text-3xl uppercase text-center'>Tools and DevOps</h1>
+            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
+              {toolsanddevs.map(tech => {
+                const ToolsIcon = tech.symbol;
+                return (
+                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
+                    <ToolsIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
+                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
