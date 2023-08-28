@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiNetlify } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiNetlify, SiFramer } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -19,12 +19,13 @@ import {
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
 } from 'react-icons/tb';
+import { FiFramer } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 50,
+    y: 100,
   },
   animate: (index) => ({
     opacity: 1,
@@ -35,6 +36,20 @@ const fadeInAnimationVariants = {
   }),
 };
 
+const slideAnimationVariants = {
+  initial: {
+    opacity: 0,
+    x: 20,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.1 * index,
+    }
+  }),
+}
+
 const About = () => {
   const technologies = [
     [
@@ -43,6 +58,7 @@ const About = () => {
       {symbol: BiLogoCss3, name: 'CSS3'},
       {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: BiLogoTailwindCss, name: 'Tailwind CSS'},
+      {symbol: FiFramer, name: 'Framer'},
     ],
 
     [
@@ -137,8 +153,8 @@ const About = () => {
                     const TechIcon = tech.symbol;
                     return (
                       <motion.div 
-                        className='text-xl items-center justify-center text-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'
-                        variants={fadeInAnimationVariants}
+                        className='text-xl gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'
+                        variants={slideAnimationVariants}
                         initial='initial'
                         whileInView='animate'
                         viewport={{
@@ -146,7 +162,7 @@ const About = () => {
                         }}
                         custom={index}
                       >
-                        <TechIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name} />
+                        <TechIcon className=' w-full transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name} />
                         <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
                       </motion.div>
                     )
