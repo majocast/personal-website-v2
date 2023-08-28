@@ -8,15 +8,16 @@ import NavBar from './components/NavBar';
 
 
 function App() {
+  
   return (
     <>
       <Router>
         <NavBar className='flex flex-shrink-0' />
           <div className='flex-grow flex flex-col items-center justify-center'>
-            <Home />
-            <About />
-            <Experience />
-            <Projects />
+            <Home className='hidden'/>
+            <About className='hidden'/>
+            <Experience className='hidden'/>
+            <Projects className='hidden'/>
           </div>
       </Router>
     </>

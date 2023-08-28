@@ -14,40 +14,60 @@ import {
   BiLogoPostgresql,
   BiLogoGithub,
   BiLogoUnity,
+  BiGitBranch,
 } from 'react-icons/bi';
 import {
-  TbBrandCSharp, TbBrandVscode,
+  TbBrandCSharp, TbBrandVscode, TbSql
 } from 'react-icons/tb';
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.1 * index,
+    },
+  }),
+};
 
 const About = () => {
-  const frontend = [
-    {symbol: BiLogoReact, name: 'React'},
-    {symbol: BiLogoHtml5, name: 'HTML5'},
-    {symbol: BiLogoCss3, name: 'CSS3'},
-    {symbol: BiLogoBootstrap, name: 'Bootstrap'},
-    {symbol: BiLogoTailwindCss, name: 'Tailwind CSS'},
-  ]
+  const technologies = [
+    [
+      {symbol: BiLogoReact, name: 'React'},
+      {symbol: BiLogoHtml5, name: 'HTML5'},
+      {symbol: BiLogoCss3, name: 'CSS3'},
+      {symbol: BiLogoBootstrap, name: 'Bootstrap'},
+      {symbol: BiLogoTailwindCss, name: 'Tailwind CSS'},
+    ],
 
-  const backend = [
-    {symbol: SiAxios, name: 'Axios'},
-    {symbol: SiExpress, name: 'Express'},
-    {symbol: BiLogoNodejs, name: 'Node.js'},
-    {symbol: BiLogoMongodb, name: 'MongoDB'},
-    {symbol: BiLogoPostgresql, name: 'Postgresql'},
-  ]
+    [
+      {symbol: SiAxios, name: 'Axios'},
+      {symbol: SiExpress, name: 'Express'},
+      {symbol: BiLogoNodejs, name: 'Node.js'},
+      {symbol: BiLogoMongodb, name: 'MongoDB'},
+      {symbol: BiLogoPostgresql, name: 'Postgresql'},
+    ],
 
-  const languages = [
-    {symbol: BiLogoJavascript, name: 'JavaScript'},
-    {symbol: BiLogoJava, name: 'Java'},
-    {symbol: TbBrandCSharp, name: 'C#'},
-  ]
+    [
+      {symbol: BiLogoJavascript, name: 'JavaScript'},
+      {symbol: BiLogoJava, name: 'Java'},
+      {symbol: TbBrandCSharp, name: 'C#'},
+      {symbol: TbSql, name: 'SQL'},
+    ],
 
-  const toolsanddevs = [
-    {symbol: BiLogoGithub, name: 'GitHub'},
-    {symbol: BiLogoUnity, name: 'Unity'},
-    {symbol: TbBrandVscode, name: 'VS Code'},
-    {symbol: SiRender, name: 'Render'},
-    {symbol: SiNetlify, name: 'Netlify'},
+    [
+      {symbol: BiLogoGithub, name: 'GitHub'},
+      {symbol: BiGitBranch, name: 'Git'},
+      {symbol: BiLogoUnity, name: 'Unity'},
+      {symbol: TbBrandVscode, name: 'VS Code'},
+      {symbol: SiRender, name: 'Render'},
+      {symbol: SiNetlify, name: 'Netlify'},
+    ],
   ]
 
   return (
@@ -91,65 +111,50 @@ const About = () => {
           <img src={gradPhoto} alt='headshot' className='rounded-xl pr-4 pb-4'/>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center gap-4'>
+      <div className='flex flex-col items-center justify-center gap-8'>
         <h1 className='text-[#E0A526] text-3xl uppercase'>Technologies I've Used</h1>
-        <div className='grid grid-cols-2 gap-4'>
-          <div className='flex flex-col'>
-            <h1 className='text-white text-3xl uppercase text-center'>Frontend</h1>
-            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
-              {frontend.map(tech => {
-                const FrontIcon = tech.symbol;
-                return (
-                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                    <FrontIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-          <div className='flex flex-col'>
-            <h1 className='text-white text-3xl uppercase text-center'>Backend</h1>
-            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
-              {backend.map(tech => {
-                const BackIcon = tech.symbol;
-                return (
-                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                    <BackIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-          <div className='flex flex-col'>
-            <h1 className='text-white text-3xl uppercase text-center'>Languages</h1>
-            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
-              {languages.map(tech => {
-                const LangIcon = tech.symbol;
-                return (
-                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                    <LangIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-          <div className='flex flex-col'>
-            <h1 className='text-white text-3xl uppercase text-center'>Tools and DevOps</h1>
-            <div className='p-1 rounded-xl flex w-9/10 gap-8 items-center border-2 align-center justify-center'>
-              {toolsanddevs.map(tech => {
-                const ToolsIcon = tech.symbol;
-                return (
-                  <div className='text-xl flex flex-col items-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'>
-                    <ToolsIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name}/>
-                    <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
+        <div className='grid grid-cols-2 gap-8'>
+          {technologies.map((section, index) => {
+            const titles = [
+              'frontend', 'backend', 'languages', 'tools and devops'
+            ]
+            const sectionTitle = titles[index];
+            return (
+              <motion.div 
+                key={index} 
+                className='p-2 rounded-xl flex flex-col justify-center text-center gap-2 border-b-2 border-r-2 border-[#E0A526]'
+                variants={fadeInAnimationVariants}
+                initial='initial'
+                whileInView='animate'
+                viewport={{
+                  once: true,
+                }}
+                custom={index}
+              >
+                <h1 className='uppercase text-xl'>{sectionTitle}</h1>
+                <div className='flex justify-center gap-4'>
+                  {section.map((tech, index) => {
+                    const TechIcon = tech.symbol;
+                    return (
+                      <motion.div 
+                        className='text-xl items-center justify-center text-center gap-2 transition duration-200 text-gray-100 group hover:text-[#E0A526]'
+                        variants={fadeInAnimationVariants}
+                        initial='initial'
+                        whileInView='animate'
+                        viewport={{
+                          once: true,
+                        }}
+                        custom={index}
+                      >
+                        <TechIcon className='transition duration-200 text-8xl group-hover:text-[#E0A526]' title={tech.name} />
+                        <h1 className='transition duration-200 text-[#0d0d0d] group-hover:text-[#E0A526]'>{tech.name}</h1>
+                      </motion.div>
+                    )
+                  })}
+                </div>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </div>
