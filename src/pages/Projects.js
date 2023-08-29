@@ -27,8 +27,8 @@ const Projects = () => {
     {img: weatherApp, href: 'https://majocast.github.io/weather-app-react/', github: 'https://github.com/majocast/weather-app-react', techs: [BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, SiAxios], name: 'Weather App', desc: 'A little weather app that allows for city search using the openweathermap.org Weather API. Website displays the current temperature, the cloud coverage, any weather like thunderstorms or rain, humidity, and wind speed. It also displays the resulting city from the search.'},
   ]
   return (
-    <div id='projects' className='min-h-screen flex flex-col items-center'>
-      <h1 className='uppercase text-[#E0A526] text-4xl py-8'>Projects</h1>
+    <div id='portfolio' className='min-h-screen flex flex-col items-center justify-center mt-16'>
+      <h1 className='uppercase text-[#E0A526] text-4xl py-8'>Portfolio</h1>
       {projects.map(project => {
         const projectImg = project.img;
         return (
