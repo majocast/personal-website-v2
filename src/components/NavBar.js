@@ -67,7 +67,13 @@ const NavBar = () => {
       >
         {contents.map((page) => {
           return (
-            <ScrollLink onClick={() => handleOpenMenu()} to={page} smooth={true} offset={-40} className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'>
+            <ScrollLink 
+              onClick={isMobile ? (() => handleOpenMenu()) : undefined} 
+              to={page} 
+              smooth={true} 
+              offset={-40} 
+              className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'
+            >
               <h1 className='p-1'>{page}</h1>
             </ScrollLink>
           );
