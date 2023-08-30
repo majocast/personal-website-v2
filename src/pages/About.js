@@ -81,15 +81,15 @@ const About = () => {
       {symbol: BiLogoReact, name: 'React'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
-      {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: BiLogoTailwindCss, name: 'Tailwind'},
+      {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: FiFramer, name: 'Framer'},
     ],
 
     [
-      {symbol: SiAxios, name: 'Axios'},
       {symbol: SiExpress, name: 'Express'},
       {symbol: BiLogoNodejs, name: 'Node.js'},
+      {symbol: SiAxios, name: 'Axios'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
       {symbol: BiLogoPostgresql, name: 'PostgreSQL'},
     ],
@@ -169,7 +169,7 @@ const About = () => {
         </motion.div>
       </div>
       <div className='flex flex-col items-center justify-center gap-8'>
-        <h1 className='text-[#E0A526] text-3xl uppercase'>Technologies I've Used</h1>
+        <h1 className='text-[#E0A526] text-2xl uppercase'>Technologies I've Used</h1>
         <div className='grid grid-cols-1 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 w-5/6'>
           {technologies.map((section, index) => {
             const titles = [

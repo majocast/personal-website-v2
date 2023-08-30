@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
       img: semiWrapped, 
-      href: 'https://semiwrapped.onrender.com', 
+      href: 'https://statsapp-9vd0.onrender.com', 
       github: 'https://github.com/majocast/spotify-api-v2', 
       techs: [BiLogoReact, SiExpress, SiAxios, BiLogoHtml5, BiLogoCss3, BiLogoBootstrap, BiLogoSpotify, BiLogoJavascript ], 
       name: 'Spotify Stats App', 
@@ -81,6 +81,7 @@ const Projects = () => {
       <h1 className='uppercase text-[#E0A526] text-4xl py-8'>Portfolio</h1>
       {projects.map((project, index) => {
         const projectImg = project.img;
+        console.log(project.github);
         return (
           <motion.div 
             variants={slideAnimationVariants}
@@ -104,8 +105,8 @@ const Projects = () => {
               </div>
               <p className='text-xs xs:text-xs md:text-md lg:text-lg text-gray-100 w-4/5'>{project.desc}</p>
               <div className='flex gap-4'>
-                {project.href ? <button className='uppercase text-gray-100 border-solid border-b-2 border-[#E0A526] rounded-lg transition ease-in-out duration-200 cursor-pointer hover:bg-[#E0A526] hover:text-[#0d0d0d] p-1' href={project.href} target='_blank' rel='noopener noreferrer'>demo</button> : null}
-                {project.github ? <button className='uppercase text-gray-100 border-solid border-b-2 border-[#E0A526] rounded-lg transition ease-in-out duration-200 cursor-pointer hover:bg-[#E0A526] hover:text-[#0d0d0d] p-1' href={project.github} target='_blank' rel='noopener noreferrer'>github</button> : null}
+                {project.href ? <a className='uppercase text-gray-100 border-solid border-b-2 border-[#E0A526] rounded-lg transition ease-in-out duration-200 cursor-pointer hover:bg-[#E0A526] hover:text-[#0d0d0d] p-1' href={project.href} target='_blank' rel='noopener noreferrer'>demo</a> : null}
+                {project.github ? <a className='uppercase text-gray-100 border-solid border-b-2 border-[#E0A526] rounded-lg transition ease-in-out duration-200 cursor-pointer hover:bg-[#E0A526] hover:text-[#0d0d0d] p-1' href={project.github} target='_blank' rel='noopener noreferrer'>github</a> : null}
               </div>
             </div>
           </motion.div>

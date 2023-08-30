@@ -1,24 +1,50 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 
+const slideDownVariants = {
+  visible: { 
+    y: '0%', 
+  },
+  hidden: { 
+    y: '-100%',
+  },
+};
+
 const NavBar = () => {
   const contents = ['about', 'portfolio', 'resume', 'contact'];
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     if(window.innerWidth >= 768) {
-      document.getElementById('navConts').classList.add('flex');
-      document.getElementById('navConts').classList.add('space-x-4');
+      document.getElementById('navConts').classList.add('flex', 'space-x-4');
       document.getElementById('menuButton').classList.add('hidden');
-
     } else {
-      document.getElementById('navConts').classList.add('hidden');
+      const navConts = document.getElementById('navConts');
+      navConts.classList.add('hidden');
       document.getElementById('menuButton').classList.add('flex');
+      const menuItems = navConts.children;
+      console.log(menuItems);
+      for(const menuItem of menuItems) {
+        menuItem.addEventListener('click', handleOpenMenu);
+      }
+      setIsMobile(!isMobile);
     }
   }, [])
 
   const handleOpenMenu = () => {
-    console.log('opening menu');
+    const navConts = document.getElementById('navConts');
+    if(!isMenuOpen) {
+      setIsMenuOpen(!isMenuOpen);
+      navConts.classList.remove('hidden');
+      navConts.classList.add('absolute', 'h-screen', 'w-screen', 'bg-[#E0A526]', 'left-0', 'top-0', 'flex', 'flex-col', 'items-center', 'justify-center');
+      console.log(navConts);
+    } else {
+      setIsMenuOpen(!isMenuOpen);
+      navConts.classList.remove();
+      navConts.classList.add('hidden');
+    }
   }
 
   return (
@@ -29,14 +55,19 @@ const NavBar = () => {
       <button
         id='menuButton'
         onClick={() => handleOpenMenu()}
-        className='uppercase absolute right-5 top-3 text-gray-100'
+        className='uppercase absolute right-5 top-3 text-gray-100 z-20'
       >
-        Menu
+        {isMenuOpen ? 'Close' : 'Menu'}
       </button>
-      <div id='navConts'>
+      <motion.div 
+        id='navConts'
+        variants={isMobile ? slideDownVariants : {}}
+        initial= {isMobile ? (isMenuOpen ? 'visible' : 'hidden') : undefined}
+        animate={isMobile ? (isMenuOpen ? 'visible' : 'hidden') : undefined}
+      >
         {contents.map((page) => {
           return (
-            <ScrollLink to={page} smooth={true} offset={-40} className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'>
+            <ScrollLink onClick={() => handleOpenMenu()} to={page} smooth={true} offset={-40} className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'>
               <h1 className='p-1'>{page}</h1>
             </ScrollLink>
           );
@@ -47,7 +78,7 @@ const NavBar = () => {
         <a href='https://www.linkedin.com/in/marcjgcastro/' target='_blank' rel='noopener noreferrer'>
           <h1 className='p-1 transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'>LinkedIn</h1>
         </a>
-      </div>
+      </motion.div>
     </motion.nav>
   )
 }
