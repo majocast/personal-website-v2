@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import About from './pages/About';
-import Resume from './pages/Resume';
+import Resume from './components/Resume';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
-import Contact from './pages/Contact';
+import Contact from './components/Contact';
 
 
 function App() {
