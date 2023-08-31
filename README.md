@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# personal-website-v2
+link: https://marccastro.onrender.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+A solo-developed, fully responsive personal portfolio to showcase my identity, accomplishments, and selected projects. Process included sketches, rough drafting, quality assurance and user central design review via having colleagues, recruiters and advisors navigate the website.
 
-## Available Scripts
+## Components:
 
-In the project directory, you can run:
+### About.js
+About.js page stores all my information about who I am, what I like, and what I use in my daily coding journey
 
-### `npm start`
+### Contact.js
+A basic component file that utilizes EmailJS to allow people to contact me via email.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home.js
+Home.js is the landing page for the portfolio. It displays my name, my profession, and my location.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Projects.js
+Projects.js is the page that shows my highlighted projects. Projects include my personal portfolio, an E-commerce website named "On The Grind", an API integrated app that utilizes the Spotify API, a crisis alert web app named "Crisis Connect", and 
+a weather app that utilizes the openweathermap.org Weather API. Each project displays the title, the technologies used, a description, and a link to the demo and github. (disclaimer: "Crisis Connect" does not have a link to the official website due to authentification, as well as the fact that our group that worked on it had to pay to utilize the services, so it was decided to take it down and leave the github viewable.)
 
-### `npm test`
+### Resume.js
+Resume.js is a simple component file that allows users to either download or view my resume in another tab.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### NavBar.js
+NavBar.js is a component file that allows the user to navigate the page via clicking on links and the page will either auto-scroll to the portion of the file, or to another page (other pages are my GitHub and my LinkedIn). NavBar.js is also responsive to smaller devices, becoming a drop down menu on phones and tablets.
