@@ -98,7 +98,6 @@ const About = () => {
       {symbol: BiLogoJavascript, name: 'JavaScript'},
       {symbol: BiLogoJava, name: 'Java'},
       {symbol: TbBrandCSharp, name: 'C#'},
-      {symbol: TbSql, name: 'SQL'},
     ],
 
     [
