@@ -128,7 +128,7 @@ const About = () => {
             making beautiful and user-friendly applications. My expertise is rooted in principles
             passed down to me from my college professors, granting me the ability to turn designs
             and documentation into fully functional applications while applying custom designs and
-            features into them. My goal is to be able to be able to create versatile applications
+            features into them. My goal is to be able to create versatile applications
             for all, providing a seamless experience for whoever crosses my projects.
             <br/><br/>
             In my down time, I enjoy playing basketball, weight lifting, building lego sets, playing video games,
