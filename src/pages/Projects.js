@@ -91,9 +91,11 @@ const Projects = () => {
               once: true,
             }}
             custom={index}
-            className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-5/6 text-center pb-2 pr-2 my-2 rounded-xl border-b-2 border-r-2 border-[#E0A526]'
+            className='grid grid-rows-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-5/6 text-center pb-2 pr-2 my-2 rounded-xl border-b-2 border-r-2 border-[#E0A526]'
           >
-            <img src={projectImg} alt={project.name} className='xs:rounded-t-xl sm:rounded-t-xl md:rounded-l-xl h-full xs:max-h-[150px] sm:max-h-[150px] md:max-h-full lg:max-h-full'/>
+            <div className='xs:rounded-t-xl sm:rounded-t-xl md:rounded-l-xl h-full'>
+              <img src={projectImg} alt={project.name} className='h-full'/>
+            </div>
             <div className='flex flex-col justify-center items-center bg-[#1a1a1a] rounded-b-xl sm:rounded-b-xl md:rounded-b-xl lg:rounded-r-xl'>
               <h1 className='text-xl sm:text-xl md:text-2xl lg:text-3xl text-[#E0A526]'>{project.name}</h1>
               <div className='flex w-full justify-center text-gray-100 gap-2'>
