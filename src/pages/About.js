@@ -17,7 +17,7 @@ import {
   BiGitBranch,
 } from 'react-icons/bi';
 import {
-  TbBrandCSharp, TbBrandVscode, TbSql
+  TbBrandCSharp, TbBrandVscode
 } from 'react-icons/tb';
 import { FiFramer } from 'react-icons/fi';
 import { motion } from 'framer-motion';
