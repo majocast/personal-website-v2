@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiNetlify } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiNetlify, SiPostman } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -17,8 +17,9 @@ import {
   BiGitBranch,
 } from 'react-icons/bi';
 import {
-  TbBrandCSharp, TbBrandVscode
+  TbBrandCSharp, TbBrandVscode, TbSql
 } from 'react-icons/tb';
+import { FaSass } from 'react-icons/fa';
 import { FiFramer } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
@@ -82,6 +83,7 @@ const About = () => {
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
       {symbol: BiLogoTailwindCss, name: 'Tailwind'},
+      {symbol: FaSass, name: 'SASS'},
       {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: FiFramer, name: 'Framer'},
     ],
@@ -97,16 +99,18 @@ const About = () => {
     [
       {symbol: BiLogoJavascript, name: 'JavaScript'},
       {symbol: BiLogoJava, name: 'Java'},
+      {symbol: TbSql, name: 'SQL'},
       {symbol: TbBrandCSharp, name: 'C#'},
     ],
 
     [
+      {symbol: TbBrandVscode, name: 'VS Code'},
       {symbol: BiLogoGithub, name: 'GitHub'},
       {symbol: BiGitBranch, name: 'Git'},
-      {symbol: BiLogoUnity, name: 'Unity'},
-      {symbol: TbBrandVscode, name: 'VS Code'},
       {symbol: SiRender, name: 'Render'},
+      {symbol: SiPostman, name: 'Postman'},
       {symbol: SiNetlify, name: 'Netlify'},
+      {symbol: BiLogoUnity, name: 'Unity'},
     ],
   ]
 

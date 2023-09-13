@@ -2,9 +2,10 @@ import React from 'react';
 import myPortfolio from '../images/projects/myportfolio.jpg';
 import onTheGrind from '../images/projects/onthegrind.jpg';
 import semiWrapped from '../images/projects/semiwrapped.jpg';
-import weatherApp from '../images/projects/weatherapp.jpg';
+import eventFinder from '../images/projects/eventfinder.jpg';
 import crisisConnect from '../images/projects/crisisconnect.jpg';
 import { SiAxios, SiExpress } from 'react-icons/si';
+import { FaSass } from 'react-icons/fa';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -16,6 +17,8 @@ import {
   BiLogoTailwindCss,
   BiLogoSpotify,
   BiLogoAws,
+  BiLogoDocker,
+  BiLogoPostgresql,
 } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 
@@ -44,6 +47,14 @@ const Projects = () => {
       desc: 'A solo-developed, fully responsive personal portfolio to showcase my identity, accomplishments, and selected projects. Process included sketches, rough drafting, quality assurance and user central design review via having colleagues, recruiters and advisors navigate the website.'
     },
     {
+      img: eventFinder, 
+      href: 'https://edmeventfinder.onrender.com/', 
+      github: 'https://github.com/majocast/EDM-Event-Finder', 
+      techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, FaSass, BiLogoNodejs, BiLogoPostgresql, SiAxios, SiExpress, BiLogoDocker, BiLogoBootstrap,], 
+      name: 'Event Scraper',
+      desc: 'A fully responsive, full-stack event scraper application that allows users view the next EDM events in California. Furthermore, users can create an account and save the upcoming events that they wish to attend, providing a more personalized experience when finding and tracking your anticipated events.'
+    },
+    {
       img: onTheGrind, 
       href: 'https://onthegrind.onrender.com', 
       github: 'https://github.com/majocast/OnTheGrind-React', 
@@ -65,14 +76,6 @@ const Projects = () => {
       techs: [BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoAws], 
       name: 'Crisis Connect', 
       desc: 'An industry-grade, Beta-level launch of a crisis alert web application that shall allow you to see Weather & Fire, Health, and Security updates uploaded directly by county officials. You can view and filter the map for updates across California, register/login to access capabilities to recieve personalized updates, and more.'
-    },
-    {
-      img: weatherApp, 
-      href: 'https://majocast.github.io/weather-app-react/', 
-      github: 'https://github.com/majocast/weather-app-react', 
-      techs: [BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, SiAxios], 
-      name: 'Weather App', 
-      desc: 'A little weather app that allows for city search using the openweathermap.org Weather API. Website displays the current temperature, the cloud coverage, any weather like thunderstorms or rain, humidity, and wind speed. It also displays the resulting city from the search.'
     },
   ]
 
