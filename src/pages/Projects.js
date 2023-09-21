@@ -51,7 +51,7 @@ const Projects = () => {
       href: 'https://edmeventfinder.onrender.com/', 
       github: 'https://github.com/majocast/EDM-Event-Finder', 
       techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, FaSass, BiLogoNodejs, BiLogoPostgresql, SiAxios, SiExpress, BiLogoDocker, BiLogoBootstrap,], 
-      name: 'Event Scraper',
+      name: 'Event Finder',
       desc: 'A fully responsive, full-stack event scraper application that allows users view the next EDM events in California. Furthermore, users can create an account and save the upcoming events that they wish to attend, providing a more personalized experience when finding and tracking your anticipated events.'
     },
     {
