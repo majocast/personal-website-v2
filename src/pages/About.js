@@ -15,6 +15,7 @@ import {
   BiLogoGithub,
   BiLogoUnity,
   BiGitBranch,
+  BiLogoPython
 } from 'react-icons/bi';
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
@@ -98,6 +99,7 @@ const About = () => {
 
     [
       {symbol: BiLogoJavascript, name: 'JavaScript'},
+      {symbol: BiLogoPython, name: 'Python'},
       {symbol: BiLogoJava, name: 'Java'},
       {symbol: TbSql, name: 'SQL'},
       {symbol: TbBrandCSharp, name: 'C#'},
