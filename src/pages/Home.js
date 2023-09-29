@@ -1,8 +1,10 @@
 import React from 'react';
 import { BiArrowToBottom } from 'react-icons/bi';
 import mainImg from '../images/main-solo-2.png';
+import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 
+//fade in animation for picture and basic description
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -15,6 +17,7 @@ const fadeInAnimationVariants = {
   },
 };
 
+//bounce animation for arrow at bottom of page
 const bounceAnimation = {
   animate: {
     y: [0,-10, 0],
@@ -27,10 +30,12 @@ const bounceAnimation = {
 }
 
 const Home = () => {
+  //gradient that creates a fade to black at bottom of picture
   const gradientMaskStyle = {
     backgroundImage: 'linear-gradient(to bottom, transparent 80%, #0d0d0d 99%)',
     backgroundBlendMode: 'multiply',
   };
+
   return (
     <motion.div 
       id='home' 
@@ -53,7 +58,15 @@ const Home = () => {
       <section className='flex flex-col gap-4 pt-4 pb-4'>
         <h1 className='text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>MARC CASTRO</h1>
         <h2 className=' text-3xl lg:text-4xl'>Full Stack Developer</h2>
-        <p className='text-xl lg:text-2xl'>Los Angeles born, San Francisco based.</p>   
+        <p className='text-xl lg:text-2xl'>Los Angeles born, San Francisco based.</p> 
+        <ScrollLink  
+          to={'contact'} 
+          smooth={true} 
+          offset={-40} 
+          className='w-1/2 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 hover:bg-[#E0A526] hover:text-[#0d0d0d] border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
+        >
+          <h1 className='p-1'>Contact Me</h1>
+        </ScrollLink> 
       </section>
       <motion.div
         className='absolute bottom-5 text-[#E0A526]'

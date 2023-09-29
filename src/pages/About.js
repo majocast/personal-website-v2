@@ -14,8 +14,10 @@ import {
   BiLogoPostgresql,
   BiLogoGithub,
   BiLogoUnity,
-  BiGitBranch,
-  BiLogoPython
+  BiLogoGit,
+  BiLogoPython,
+  BiLogoDjango,
+  BiLogoFigma
 } from 'react-icons/bi';
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
@@ -24,6 +26,7 @@ import { FaSass } from 'react-icons/fa';
 import { FiFramer } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
+//fade in animations for boxes containing technologies
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -38,6 +41,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
+//slide animations for individual technologies
 const slideAnimationVariants = {
   initial: {
     opacity: 0,
@@ -52,6 +56,7 @@ const slideAnimationVariants = {
   }),
 }
 
+//isolated slide animations for about description and picture
 const isoSlideAnimationVariants = {
   initialRight: {
     opacity: 0,
@@ -78,6 +83,7 @@ const isoSlideAnimationVariants = {
 }
 
 const About = () => {
+  //object array for languages and technologies
   const technologies = [
     [
       {symbol: BiLogoReact, name: 'React'},
@@ -95,11 +101,12 @@ const About = () => {
       {symbol: SiAxios, name: 'Axios'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
       {symbol: BiLogoPostgresql, name: 'PostgreSQL'},
+      {symbol: BiLogoDjango, name: 'Django'},
     ],
 
     [
       {symbol: BiLogoJavascript, name: 'JavaScript'},
-      {symbol: BiLogoPython, name: 'Python'},
+      {symbol: BiLogoPython, name: 'Python 3'},
       {symbol: BiLogoJava, name: 'Java'},
       {symbol: TbSql, name: 'SQL'},
       {symbol: TbBrandCSharp, name: 'C#'},
@@ -108,10 +115,11 @@ const About = () => {
     [
       {symbol: TbBrandVscode, name: 'VS Code'},
       {symbol: BiLogoGithub, name: 'GitHub'},
-      {symbol: BiGitBranch, name: 'Git'},
+      {symbol: BiLogoGit, name: 'Git'},
       {symbol: SiRender, name: 'Render'},
       {symbol: SiPostman, name: 'Postman'},
       {symbol: SiNetlify, name: 'Netlify'},
+      {symbol: BiLogoFigma, name: 'Figma'},
       {symbol: BiLogoUnity, name: 'Unity'},
     ],
   ]

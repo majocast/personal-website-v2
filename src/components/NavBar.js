@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 
+//slide down mechanic for menu when in mobile applications
 const slideDownVariants = {
   visible: { 
     y: '0%', 
@@ -16,6 +17,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  //useEffect that handles on mount to change css between dropdown menu and navbar
   useEffect(() => {
     if(window.innerWidth >= 768) {
       document.getElementById('navConts').classList.add('flex', 'space-x-4');
@@ -33,6 +35,7 @@ const NavBar = () => {
     }
   }, [])
 
+  //handler function for when user clicks on menu button to open navigation components
   const handleOpenMenu = () => {
     const navConts = document.getElementById('navConts');
     if(!isMenuOpen) {

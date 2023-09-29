@@ -1,7 +1,10 @@
+//component that handles the emailing mechanics for contact section
+
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
+//isolated slide animation for contact section
 const isoSlideAnimationVariants = {
   initial: {
     opacity: 0,
@@ -21,7 +24,8 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
+    //emailjs sendform function that handles the emailing mechanics
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
     .then((result) => {
       console.log(result.text);
