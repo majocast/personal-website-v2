@@ -4,7 +4,7 @@ import onTheGrind from '../images/projects/onthegrind.jpg';
 import semiWrapped from '../images/projects/semiwrapped.jpg';
 import eventFinder from '../images/projects/eventfinder.jpg';
 import crisisConnect from '../images/projects/crisisconnect.jpg';
-import { SiAxios, SiExpress } from 'react-icons/si';
+import { SiAxios, SiExpress, SiReactquery } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
 import {
   BiLogoMongodb,
@@ -52,7 +52,7 @@ const Projects = () => {
       img: eventFinder, 
       href: 'https://edmeventfinder.onrender.com/', 
       github: 'https://github.com/majocast/EDM-Event-Finder', 
-      techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, FaSass, BiLogoNodejs, BiLogoPostgresql, SiAxios, SiExpress, BiLogoDocker, BiLogoBootstrap,], 
+      techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, FaSass, BiLogoNodejs, BiLogoPostgresql, SiAxios, SiExpress, BiLogoDocker, BiLogoBootstrap, SiReactquery], 
       name: 'Event Finder',
       desc: 'A fully responsive, event scraper application that allows users view the next EDM events in California. Furthermore, users can create an account and save the upcoming events that they wish to attend, providing a more personalized experience when finding and tracking your anticipated events.'
     },

@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -89,16 +89,17 @@ const About = () => {
       {symbol: BiLogoReact, name: 'React'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
+      {symbol: SiAxios, name: 'Axios'},
       {symbol: BiLogoTailwindCss, name: 'Tailwind'},
       {symbol: FaSass, name: 'SASS'},
       {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: FiFramer, name: 'Framer'},
+      {symbol: SiReactquery, name: 'React-query'},
     ],
 
     [
       {symbol: SiExpress, name: 'Express'},
       {symbol: BiLogoNodejs, name: 'Node.js'},
-      {symbol: SiAxios, name: 'Axios'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
       {symbol: BiLogoPostgresql, name: 'PostgreSQL'},
       {symbol: BiLogoDjango, name: 'Django'},
