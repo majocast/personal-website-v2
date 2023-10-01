@@ -54,7 +54,7 @@ const Projects = () => {
       github: 'https://github.com/majocast/EDM-Event-Finder', 
       techs: [BiLogoReact, BiLogoJavascript, BiLogoHtml5, FaSass, BiLogoNodejs, BiLogoPostgresql, SiAxios, SiExpress, BiLogoDocker, BiLogoBootstrap,], 
       name: 'Event Finder',
-      desc: 'A fully responsive, full-stack event scraper application that allows users view the next EDM events in California. Furthermore, users can create an account and save the upcoming events that they wish to attend, providing a more personalized experience when finding and tracking your anticipated events.'
+      desc: 'A fully responsive, event scraper application that allows users view the next EDM events in California. Furthermore, users can create an account and save the upcoming events that they wish to attend, providing a more personalized experience when finding and tracking your anticipated events.'
     },
     {
       img: onTheGrind, 
@@ -62,7 +62,7 @@ const Projects = () => {
       github: 'https://github.com/majocast/OnTheGrind-React', 
       techs: [BiLogoMongodb, SiExpress, BiLogoReact, BiLogoNodejs, BiLogoJavascript, SiAxios, BiLogoHtml5, BiLogoTailwindCss], 
       name: 'On The Grind', 
-      desc: 'A full stack e-commerce website that allows users to view the products that the company known as "On The Grind" have to offer! Users can navigate the page, sign in or create an account, add items to their cart, place an order, and so much more.'
+      desc: 'An e-commerce website that allows users to view the products that the company known as "On The Grind" have to offer! Users can navigate the page, sign in or create an account, add items to their cart, place an order, and so much more.'
     },
     {
       img: semiWrapped, 
@@ -77,7 +77,7 @@ const Projects = () => {
       github: 'https://github.com/CSC-648-SFSU/csc648-02-sp2023-team04', 
       techs: [BiLogoReact, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoAws], 
       name: 'Crisis Connect', 
-      desc: 'An industry-grade, Beta-level launch of a crisis alert web application that shall allow you to see Weather & Fire, Health, and Security updates uploaded directly by county officials. You can view and filter the map for updates across California, register/login to access capabilities to recieve personalized updates, and more.'
+      desc: 'An industry-grade, Beta-level launch of a crisis alert web application that shall allow users to see Weather & Fire, Health, and Security updates uploaded directly by county officials in California. You can view and filter the map for updates, register/login to access capabilities to recieve personalized updates, and more.'
     },
   ]
 

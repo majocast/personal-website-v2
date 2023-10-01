@@ -118,7 +118,6 @@ const About = () => {
       {symbol: BiLogoGit, name: 'Git'},
       {symbol: SiRender, name: 'Render'},
       {symbol: SiPostman, name: 'Postman'},
-      {symbol: SiNetlify, name: 'Netlify'},
       {symbol: BiLogoFigma, name: 'Figma'},
       {symbol: BiLogoUnity, name: 'Unity'},
     ],
@@ -126,7 +125,7 @@ const About = () => {
 
   return (
     <div id='about' className='text-gray-100 flex flex-col w-9/10 min-h-screen'>
-      <div className='flex flex-col xs:flex-col sm:grid-col md:flex-row lg:flex-row w-full min-h-screen items-center gap-4 justify-center'>
+      <div className='flex flex-col xs:flex-col sm:grid-col md:flex-row lg:flex-row w-full min-h-screen items-center gap-8 justify-center'>
         <motion.div 
           className='flex flex-col w-4/5 xs:w-4/5 md:w-1/2 lg:w-1/2 gap-2'
           variants={isoSlideAnimationVariants}
@@ -139,11 +138,11 @@ const About = () => {
           <h1 className='text-[#E0A526] text-4xl uppercase'>About Me</h1>
           <p className='text-sm xs:text-sm md:text-md lg:text-lg'>
             I am full stack developer from the state of California and I am excited about
-            making beautiful and user-friendly applications. My expertise is rooted in principles
-            passed down to me from my college professors, granting me the ability to turn designs
-            and documentation into fully functional applications while applying custom designs and
-            features into them. My goal is to be able to create versatile applications
-            for all, providing a seamless experience for whoever crosses my projects.
+            making beautiful, user-friendly, efficient applications. My expertise is rooted in my persistent
+            drive to learn new technologies and implement principles passed down by mentors and university professors, 
+            granting me the ability to turn mere concepts into fully functional applications utilizing various languages and 
+            tech stacks. My goal is to be able to create versatile applications for all who encounter them, making 
+            a significant impact in any community I aim to contribute to.
             <br/><br/>
             In my down time, I enjoy playing basketball, weight lifting, building lego sets, playing video games,
             spending time with family and friends, going to concerts, and watching 
@@ -178,12 +177,12 @@ const About = () => {
             once: true,
           }}
         >
-          <img src={gradPhoto} alt='headshot' className='rounded-2xl pr-4 pb-4'/>
+          <img src={gradPhoto} alt='headshot' className='rounded-xl mr-8 mb-4'/>
         </motion.div>
       </div>
       <div className='flex flex-col items-center justify-center gap-8'>
-        <h1 className='text-[#E0A526] text-2xl uppercase'>Technologies I've Used</h1>
-        <div className='grid grid-cols-1 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 w-5/6'>
+        <h1 className='text-[#E0A526] text-4xl uppercase'>Technologies</h1>
+        <div className='grid grid-cols-1 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 w-11/12 mx-8'>
           {technologies.map((section, index) => {
             const titles = [
               'frontend', 'backend', 'languages', 'tools and devops'
@@ -202,7 +201,7 @@ const About = () => {
                 custom={index}
               >
                 <h1 className='uppercase text-xl'>{sectionTitle}</h1>
-                <div className='flex justify-center gap-4'>
+                <div className='flex justify-center gap-4 mr-2 ml-2'>
                   {section.map((tech, index) => {
                     const TechIcon = tech.symbol;
                     return (
