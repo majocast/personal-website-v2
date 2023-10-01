@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiNetlify, SiPostman } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
