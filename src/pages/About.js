@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -102,6 +102,7 @@ const About = () => {
       {symbol: BiLogoNodejs, name: 'Node.js'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
       {symbol: BiLogoPostgresql, name: 'PostgreSQL'},
+      {symbol: SiMysql, name: 'MySQL'},
       {symbol: BiLogoDjango, name: 'Django'},
     ],
 
@@ -192,7 +193,7 @@ const About = () => {
             return (
               <motion.div 
                 key={index} 
-                className='p-2 bg-[#1a1a1a] rounded-xl flex flex-col justify-center text-center gap-4 border-b-2 border-r-2 border-[#E0A526]'
+                className='p-2 bg-[#1a1a1a] rounded-xl flex flex-col text-center gap-4 border-b-2 border-r-2 border-[#E0A526]'
                 variants={fadeInAnimationVariants}
                 initial='initial'
                 whileInView='animate'
@@ -201,13 +202,13 @@ const About = () => {
                 }}
                 custom={index}
               >
-                <h1 className='uppercase text-xl'>{sectionTitle}</h1>
-                <div className='flex justify-center gap-4 mr-2 ml-2'>
+                <h1 className='uppercase text-xl mt-0'>{sectionTitle}</h1>
+                <div className='h-full flex flex-wrap justify-evenly items-center gap-4 mx-2 space-evenly'>
                   {section.map((tech, index) => {
                     const TechIcon = tech.symbol;
                     return (
                       <motion.div 
-                        className='flex flex-col text-xl transition duration-200 text-gray-100 group hover:text-[#E0A526] justify-between w-full'
+                        className='flex flex-col items-center text-xl transition duration-200 text-gray-100 group hover:text-[#E0A526] justify-between'
                         variants={slideAnimationVariants}
                         initial='initial'
                         whileInView='animate'
