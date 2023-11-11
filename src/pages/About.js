@@ -87,8 +87,6 @@ const About = () => {
   const technologies = [
     [
       {symbol: BiLogoReact, name: 'React'},
-      {symbol: BiLogoHtml5, name: 'HTML5'},
-      {symbol: BiLogoCss3, name: 'CSS3'},
       {symbol: SiAxios, name: 'Axios'},
       {symbol: BiLogoTailwindCss, name: 'Tailwind'},
       {symbol: FaSass, name: 'SASS'},
@@ -108,6 +106,8 @@ const About = () => {
 
     [
       {symbol: BiLogoJavascript, name: 'JavaScript'},
+      {symbol: BiLogoHtml5, name: 'HTML5'},
+      {symbol: BiLogoCss3, name: 'CSS3'},
       {symbol: BiLogoPython, name: 'Python 3'},
       {symbol: BiLogoJava, name: 'Java'},
       {symbol: TbSql, name: 'SQL'},

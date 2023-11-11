@@ -5,10 +5,14 @@ import { motion } from 'framer-motion';
 //slide down mechanic for menu when in mobile applications
 const slideDownVariants = {
   visible: { 
-    y: '0%', 
+    scaleY: 1, 
+    originY: 0,
+    transition: { duration: 0.5, ease: "easeInOut"},
   },
   hidden: { 
-    y: '-100%',
+    scaleY: 0,
+    originY: 0,
+    transition: { duration: 0.5, ease: "easeInOut"},
   },
 };
 
