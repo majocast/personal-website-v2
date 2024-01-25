@@ -19,6 +19,8 @@ import {
   BiLogoDjango,
   BiLogoFigma,
   BiLogoTypescript,
+  BiLogoSquarespace,
+  BiLogoJquery
 } from 'react-icons/bi';
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
@@ -95,6 +97,7 @@ const About = () => {
       {symbol: FiFramer, name: 'Framer'},
       {symbol: SiReactquery, name: 'React-query'},
       {symbol: SiVite, name: 'Vite'},
+      {symbol: BiLogoJquery, name: 'jQuery'},
     ],
 
     [
@@ -125,6 +128,7 @@ const About = () => {
       {symbol: SiPostman, name: 'Postman'},
       {symbol: BiLogoFigma, name: 'Figma'},
       {symbol: BiLogoUnity, name: 'Unity'},
+      {symbol: BiLogoSquarespace, name: 'Squarespace'},
     ],
   ]
 
