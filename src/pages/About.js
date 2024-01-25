@@ -154,8 +154,7 @@ const About = () => {
             a significant impact in any community I aim to contribute to.
             <br/><br/>
             In my down time, I enjoy playing basketball, weight lifting, building lego sets, playing video games,
-            spending time with family and friends, going to concerts, and watching 
-            <span className='italic'>The Office</span>.
+            spending time with family and friends, going to concerts, travelling, and watching Netflix.
           </p>
           <div className='text-xs xs:text-xs md:text-md lg:text-lg grid grid-cols-2 grid-rows-2 gap-4 pt-4 text-xl'>
             <section>
