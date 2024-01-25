@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -17,7 +17,8 @@ import {
   BiLogoGit,
   BiLogoPython,
   BiLogoDjango,
-  BiLogoFigma
+  BiLogoFigma,
+  BiLogoTypescript,
 } from 'react-icons/bi';
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
@@ -93,6 +94,7 @@ const About = () => {
       {symbol: BiLogoBootstrap, name: 'Bootstrap'},
       {symbol: FiFramer, name: 'Framer'},
       {symbol: SiReactquery, name: 'React-query'},
+      {symbol: SiVite, name: 'Vite'},
     ],
 
     [
@@ -106,6 +108,7 @@ const About = () => {
 
     [
       {symbol: BiLogoJavascript, name: 'JavaScript'},
+      {symbol: BiLogoTypescript, name: 'TypeScript'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
       {symbol: BiLogoPython, name: 'Python 3'},

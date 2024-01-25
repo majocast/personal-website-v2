@@ -56,14 +56,14 @@ const Home = () => {
         ></div>
       </div>
       <section className='flex flex-col gap-4 pt-4 pb-4'>
-        <h1 className='text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>MARC CASTRO</h1>
+        <h1 className='uppercase text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>marc castro</h1>
         <h2 className=' text-3xl lg:text-4xl'>Full Stack Developer</h2>
-        <p className='text-xl lg:text-2xl'>Los Angeles born, San Francisco based.</p> 
+        <p className='text-xl lg:text-2xl'>React, JavaScript, and more.</p>
         <ScrollLink  
           to={'contact'} 
           smooth={true} 
           offset={-40} 
-          className='w-1/2 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 hover:bg-[#E0A526] hover:text-[#0d0d0d] border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
+          className='cursor-pointer w-1/2 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 hover:bg-[#E0A526] hover:text-[#0d0d0d] border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
         >
           <h1 className='p-1'>Contact Me</h1>
         </ScrollLink> 
