@@ -72,7 +72,7 @@ const NavBar = () => {
         initial= {isMobile ? (isMenuOpen ? 'visible' : 'hidden') : undefined}
         animate={isMobile ? (isMenuOpen ? 'visible' : 'hidden') : undefined}
       >
-        {contents.map((page) => {
+        {contents.map((page, index) => {
           return (
             <ScrollLink 
               onClick={isMobile ? (() => handleOpenMenu()) : undefined} 
@@ -80,6 +80,7 @@ const NavBar = () => {
               smooth={true} 
               offset={-40} 
               className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'
+              key={index}
             >
               <h1 className='p-1'>{page}</h1>
             </ScrollLink>

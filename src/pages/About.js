@@ -222,6 +222,7 @@ const About = () => {
                           once: true,
                         }}
                         custom={index}
+                        key={index}
                       >
                         <TechIcon size={50} className='w-full transition duration-200 group-hover:text-[#E0A526]' title={tech.name} />
                         <h1 className='justify-center text-xs xs:text-xs md:text-md lg:text-lg xs:hidden sm:hidden md:hidden lg:flex transition duration-200 text-[#1a1a1a] group-hover:text-[#E0A526]'>{tech.name}</h1>

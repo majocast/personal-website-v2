@@ -96,6 +96,7 @@ const Projects = () => {
               once: true,
             }}
             custom={index}
+            key={index}
             className='grid grid-rows-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-5/6 text-center pb-2 pr-2 my-2 rounded-xl border-b-2 border-r-2 border-[#E0A526]'
           >
             <div className='flex max-h-full'>
@@ -104,10 +105,10 @@ const Projects = () => {
             <div className='gap-0 lg:gap-2 xl:gap-4 flex flex-col justify-center items-center bg-[#1a1a1a] rounded-b-xl sm:rounded-b-xl md:rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none'>
               <h1 className='text-xl sm:text-xl md:text-2xl lg:text-3xl text-[#E0A526]'>{project.name}</h1>
               <div className='flex w-full justify-center text-gray-100 gap-2'>
-                {project.techs.map(tech => {
+                {project.techs.map((tech, index) => {
                   const TechIcon = tech;
                   return (
-                    <TechIcon size={50} />
+                    <TechIcon key={index} size={50} />
                   )
                 })}
               </div>
