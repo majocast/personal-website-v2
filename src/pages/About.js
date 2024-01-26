@@ -114,7 +114,7 @@ const About = () => {
       {symbol: BiLogoTypescript, name: 'TypeScript'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
-      {symbol: BiLogoPython, name: 'Python 3'},
+      {symbol: BiLogoPython, name: 'Python'},
       {symbol: BiLogoJava, name: 'Java'},
       {symbol: TbSql, name: 'SQL'},
       {symbol: TbBrandCSharp, name: 'C#'},
