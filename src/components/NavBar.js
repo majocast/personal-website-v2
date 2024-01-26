@@ -55,7 +55,7 @@ const NavBar = () => {
   }
 
   return (
-    <motion.nav className='text-sm xs:text-sm md:text-md lg:text-xl flex py-2 px-4 bg-[#0d0d0d] fixed top-0 flex w-full justify-between z-10 text-gray-100 uppercase'>
+    <motion.nav className='text-sm xs:text-sm md:text-md lg:text-xl flex py-2 px-4 bg-[#0d0d0d] fixed top-0 flex w-full max-w-[1920px] justify-between z-10 text-gray-100 uppercase'>
       <ScrollLink to={'home'} smooth={true} className='transition ease-in-out duration-200 cursor-pointer hover:text-[#E0A526]'>
         <h1 className='p-1'>Marc Castro</h1>
       </ScrollLink>
