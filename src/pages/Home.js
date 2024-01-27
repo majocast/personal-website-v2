@@ -63,7 +63,7 @@ const Home = () => {
           to={'contact'} 
           smooth={true} 
           offset={-40} 
-          className='cursor-pointer w-1/3 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 bg-[#E0A526] text-[#0d0d0d] hover:bg-[#0d0d0d] hover:text-gray-100 border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
+          className='cursor-pointer w-1/3 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 bg-[#E0A526] text-[#0d0d0d] hover:bg-[#0d0d0d] hover:text-gray-100 border-2 border-[#E0A526] bg-[#0d0d0d]'
         >
           <h1 className='p-1'>Contact Me</h1>
         </ScrollLink>
