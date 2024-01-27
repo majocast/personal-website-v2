@@ -55,7 +55,7 @@ const Home = () => {
           style={gradientMaskStyle}
         ></div>
       </div>
-      <section className='flex flex-col gap-4 pt-4 pb-4'>
+      <section className='flex flex-col gap-6 pt-4 pb-4'>
         <h1 className='uppercase text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>marc castro</h1>
         <h2 className=' text-3xl lg:text-4xl'>Full Stack Developer</h2>
         <p className='text-xl lg:text-2xl'>React, JavaScript, and more.</p>
@@ -63,10 +63,10 @@ const Home = () => {
           to={'contact'} 
           smooth={true} 
           offset={-40} 
-          className='cursor-pointer w-1/2 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 hover:bg-[#E0A526] hover:text-[#0d0d0d] border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
+          className='cursor-pointer w-1/3 text-center gap-1 transition ease-in-out duration-200 uppercase text-xl rounded-lg p-2 bg-[#E0A526] text-[#0d0d0d] hover:bg-[#0d0d0d] hover:text-gray-100 border-2 border-[#E0A526] bg-[#0d0d0d] text-gray-100'
         >
           <h1 className='p-1'>Contact Me</h1>
-        </ScrollLink> 
+        </ScrollLink>
       </section>
       <motion.div
         className='absolute bottom-5 text-[#E0A526]'
