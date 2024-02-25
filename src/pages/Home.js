@@ -59,7 +59,7 @@ const Home = () => {
         <h1 className='uppercase text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>marc castro</h1>
         <h2 className=' text-3xl lg:text-4xl'>Full Stack Developer</h2>
         <p className='text-xl lg:text-2xl'>React, JavaScript, and more.</p>
-        <ScrollLink  
+        <ScrollLink
           to={'contact'} 
           smooth={true} 
           offset={-40} 
