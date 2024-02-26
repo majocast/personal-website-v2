@@ -23,21 +23,7 @@ import {
   BiLogoSquarespace
 } from 'react-icons/bi';
 import { motion } from 'framer-motion';
-
-//animation variants for sliding in projects on scroll
-const slideAnimationVariants = {
-  initial: {
-    opacity: 0,
-    x: 20,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.25,
-    }
-  },
-}
+import { fadeInRight } from '../helpers/motion-variants';
 
 const Projects = () => {
   //projects object array that contains all the projects for display
@@ -89,7 +75,7 @@ const Projects = () => {
         const projectImg = project.img;
         return (
           <motion.div 
-            variants={slideAnimationVariants}
+            variants={fadeInRight}
             initial='initial'
             whileInView='animate'
             viewport={{

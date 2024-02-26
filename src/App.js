@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
 import Contact from './components/Contact';
+import Experience from './pages/Experience';
 
 
 function App() {

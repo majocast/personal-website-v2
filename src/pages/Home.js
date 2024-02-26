@@ -2,20 +2,8 @@ import React from 'react';
 import { BiArrowToBottom } from 'react-icons/bi';
 import mainImg from '../images/main-solo-2.png';
 import { Link as ScrollLink } from 'react-scroll';
+import { fadeIn } from '../helpers/motion-variants';
 import { motion } from 'framer-motion';
-
-//fade in animation for picture and basic description
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      delay: 0.5,
-    },
-  },
-};
 
 //bounce animation for arrow at bottom of page
 const bounceAnimation = {
@@ -40,7 +28,7 @@ const Home = () => {
     <motion.div 
       id='home' 
       className='text-gray-100 flex flex-col md:flex-row lg:flex-row items-center justify-center w-3/4 min-h-screen gap-14'
-      variants={fadeInAnimationVariants}
+      variants={fadeIn}
       initial='initial'
       whileInView='animate'
       viewport={{

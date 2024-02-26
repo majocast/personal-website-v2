@@ -28,21 +28,7 @@ import {
 import { FaSass } from 'react-icons/fa';
 import { FiFramer } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-
-//fade in animations for boxes containing technologies
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.1 * index,
-    },
-  }),
-};
+import { fadeInLeft, fadeInRight, fadeInUp } from '../helpers/motion-variants';
 
 //slide animations for individual technologies
 const slideAnimationVariants = {
@@ -57,32 +43,6 @@ const slideAnimationVariants = {
       delay: 0.1 * index,
     }
   }),
-}
-
-//isolated slide animations for about description and picture
-const isoSlideAnimationVariants = {
-  initialRight: {
-    opacity: 0,
-    x: 20,
-  },
-  initialLeft: {
-    opacity: 0,
-    x: -20,
-  },
-  animateRight: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.25,
-    }
-  },
-  animateLeft: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.25,
-    }
-  },
 }
 
 const About = () => {
@@ -137,9 +97,9 @@ const About = () => {
       <div className='flex flex-col xs:flex-col sm:grid-col md:flex-row lg:flex-row w-full min-h-screen items-center gap-8 justify-center'>
         <motion.div 
           className='flex flex-col w-4/5 xs:w-4/5 md:w-1/2 lg:w-1/2 gap-2'
-          variants={isoSlideAnimationVariants}
-          initial='initialLeft'
-          whileInView='animateLeft'
+          variants={fadeInLeft}
+          initial='initial'
+          whileInView='animate'
           viewport={{
             once: true,
           }}
@@ -178,9 +138,9 @@ const About = () => {
         </motion.div>
         <motion.div 
           className='relative flex justify-center rounded-xl border-r-2 border-b-2 border-[#E0A526] w-3/4 xs:w-3/4 sm:w-3/4 md:w-1/4 lg:w-1/4 w-1/4 order-first xs:order-first sm:order-first md:order-last lg:order-last'
-          variants={isoSlideAnimationVariants}
-          initial='initialRight'
-          whileInView='animateRight'
+          variants={fadeInRight}
+          initial='initial'
+          whileInView='animate'
           viewport={{
             once: true,
           }}
@@ -200,7 +160,7 @@ const About = () => {
               <motion.div 
                 key={index} 
                 className='p-2 bg-[#1a1a1a] rounded-xl flex flex-col text-center gap-4 border-b-2 border-r-2 border-[#E0A526]'
-                variants={fadeInAnimationVariants}
+                variants={fadeInUp}
                 initial='initial'
                 whileInView='animate'
                 viewport={{
