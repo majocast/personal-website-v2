@@ -31,7 +31,6 @@ const NavBar = () => {
       navConts.classList.add('hidden');
       document.getElementById('menuButton').classList.add('flex');
       const menuItems = navConts.children;
-      console.log(menuItems);
       for(const menuItem of menuItems) {
         menuItem.addEventListener('click', handleOpenMenu);
       }
@@ -46,7 +45,6 @@ const NavBar = () => {
       setIsMenuOpen(!isMenuOpen);
       navConts.classList.remove('hidden');
       navConts.classList.add('absolute', 'h-screen', 'w-screen', 'bg-[#E0A526]', 'left-0', 'top-0', 'flex', 'flex-col', 'items-center', 'justify-center');
-      console.log(navConts);
     } else {
       setIsMenuOpen(!isMenuOpen);
       navConts.classList.remove();

@@ -3,20 +3,7 @@ import resumePDF from '../images/Castro_Marc_Resume2024.pdf';
 import { BiDownload } from 'react-icons/bi';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
-
-const isoSlideAnimationVariants = {
-  initial: {
-    opacity: 0,
-    x: 20,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.25,
-    }
-  },
-}
+import { fadeInLeft } from '../helpers/motion-variants';
 
 const Resume = () => {
   return (
@@ -24,7 +11,7 @@ const Resume = () => {
       <h1 className='uppercase text-4xl text-[#E0A526]'>Resume</h1>
       <motion.div 
         className='text-sm xs:text-sm md:text-md lg:text-lg rounded-xl flex text-white gap-2 p-4 border-b-2 border-r-2 border-[#E0A526]'
-        variants={isoSlideAnimationVariants}
+        variants={fadeInLeft}
         initial='initial'
         whileInView='animate'
         viewport={{

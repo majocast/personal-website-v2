@@ -23,7 +23,7 @@ import {
   BiLogoSquarespace
 } from 'react-icons/bi';
 import { motion } from 'framer-motion';
-import { fadeInRight } from '../helpers/motion-variants';
+import { fadeInLeft } from '../helpers/motion-variants';
 
 const Projects = () => {
   //projects object array that contains all the projects for display
@@ -75,7 +75,7 @@ const Projects = () => {
         const projectImg = project.img;
         return (
           <motion.div 
-            variants={fadeInRight}
+            variants={fadeInLeft}
             initial='initial'
             whileInView='animate'
             viewport={{

@@ -45,8 +45,8 @@ const Home = () => {
       </div>
       <section className='flex flex-col gap-6 pt-4 pb-4'>
         <h1 className='uppercase text-5xl md:text-6xl lg:text-7xl text-[#E0A526]'>marc castro</h1>
-        <h2 className=' text-3xl lg:text-4xl'>Full Stack Developer</h2>
-        <p className='text-xl lg:text-2xl'>React, JavaScript, and more.</p>
+        <h2 className=' text-3xl lg:text-4xl'>Software Engineer</h2>
+        <p className='text-xl lg:text-2xl'>Ruby on Rails, React, and more.</p>
         <ScrollLink
           to={'contact'} 
           smooth={true} 

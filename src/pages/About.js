@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite, SiRuby, SiRubyonrails, SiJira, SiRubygems } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -20,7 +20,8 @@ import {
   BiLogoFigma,
   BiLogoTypescript,
   BiLogoSquarespace,
-  BiLogoJquery
+  BiLogoJquery,
+  BiLogoDocker
 } from 'react-icons/bi';
 import {
   TbBrandCSharp, TbBrandVscode, TbSql
@@ -61,6 +62,8 @@ const About = () => {
     ],
 
     [
+      {symbol: SiRubyonrails, name: 'Ruby on Rails'},
+      {symbol: SiRubygems, name: 'Ruby Gems'},
       {symbol: SiExpress, name: 'Express'},
       {symbol: BiLogoNodejs, name: 'Node.js'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
@@ -70,6 +73,7 @@ const About = () => {
     ],
 
     [
+      {symbol: SiRuby, name: 'Ruby'},
       {symbol: BiLogoJavascript, name: 'JavaScript'},
       {symbol: BiLogoTypescript, name: 'TypeScript'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
@@ -81,6 +85,8 @@ const About = () => {
     ],
 
     [
+      {symbol: SiJira, name: 'Jira'},
+      {symbol: BiLogoDocker, name: 'Docker'},
       {symbol: TbBrandVscode, name: 'VS Code'},
       {symbol: BiLogoGithub, name: 'GitHub'},
       {symbol: BiLogoGit, name: 'Git'},
@@ -97,7 +103,7 @@ const About = () => {
       <div className='flex flex-col xs:flex-col sm:grid-col md:flex-row lg:flex-row w-full min-h-screen items-center gap-8 justify-center'>
         <motion.div 
           className='flex flex-col w-4/5 xs:w-4/5 md:w-1/2 lg:w-1/2 gap-2'
-          variants={fadeInLeft}
+          variants={fadeInRight}
           initial='initial'
           whileInView='animate'
           viewport={{
@@ -132,13 +138,13 @@ const About = () => {
             </section>
             <section>
               <h1 className='text-[#E0A526] uppercase'>Employment</h1>
-              <h2>Open</h2>
+              <h2>Disney Entertainment & ESPN Technology</h2>
             </section>
           </div>
         </motion.div>
         <motion.div 
           className='relative flex justify-center rounded-xl border-r-2 border-b-2 border-[#E0A526] w-3/4 xs:w-3/4 sm:w-3/4 md:w-1/4 lg:w-1/4 w-1/4 order-first xs:order-first sm:order-first md:order-last lg:order-last'
-          variants={fadeInRight}
+          variants={fadeInLeft}
           initial='initial'
           whileInView='animate'
           viewport={{
@@ -153,7 +159,7 @@ const About = () => {
         <div className='grid grid-cols-1 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 w-11/12 mx-8'>
           {technologies.map((section, index) => {
             const titles = [
-              'frontend', 'backend', 'languages', 'tools and devops'
+              'frontend', 'backend', 'languages', 'tools'
             ]
             const sectionTitle = titles[index];
             return (

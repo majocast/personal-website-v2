@@ -13,7 +13,7 @@ export const fadeIn = {
 export const fadeInRight = {
   initial: {
     opacity: 0,
-    x: 20,
+    x: -20,
   },
   animate: {
     opacity: 1,
@@ -27,7 +27,7 @@ export const fadeInRight = {
 export const fadeInLeft = {
   initial: {
     opacity: 0,
-    x: -20,
+    x: 20,
   },
   animate: {
     opacity: 1,

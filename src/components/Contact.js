@@ -3,21 +3,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-
-//isolated slide animation for contact section
-const isoSlideAnimationVariants = {
-  initial: {
-    opacity: 0,
-    x: 20,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.25,
-    }
-  },
-}
+import { fadeInLeft } from '../helpers/motion-variants';
 
 const Contact = () => {
   const form = useRef();
@@ -41,7 +27,7 @@ const Contact = () => {
         ref={form} 
         onSubmit={sendEmail} 
         className='flex flex-col p-16 border-b-2 border-r-2 rounded-xl border-[#E0A526] w-9/10 xs:w-9/10 md:w-full lg:w-full'
-        variants={isoSlideAnimationVariants}
+        variants={fadeInLeft}
         initial='initial'
         whileInView='animate'
         viewport={{
