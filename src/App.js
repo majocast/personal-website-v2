@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
 import Contact from './components/Contact';
+//import { Experience } from './pages/Experience';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <div className='flex-grow flex flex-col items-center justify-center max-w-[1920px]'>
           <Home className='hidden'/>
           <About className='hidden'/>
+          {/*<Experience className='hidden'/>*/}
           <Projects className='hidden'/>
           <Resume className='hidden'/>
           <Contact className='hidden'/>
