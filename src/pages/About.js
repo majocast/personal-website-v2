@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite, SiRuby, SiRubyonrails, SiJira, SiRubygems } from 'react-icons/si';
+import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite, SiRuby, SiRubyonrails, SiJest, SiJira, SiRubygems } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -87,14 +87,13 @@ const About = () => {
     [
       {symbol: SiJira, name: 'Jira'},
       {symbol: BiLogoDocker, name: 'Docker'},
+      {symbol: SiJest, name: 'Jest'},
       {symbol: TbBrandVscode, name: 'VS Code'},
       {symbol: BiLogoGithub, name: 'GitHub'},
       {symbol: BiLogoGit, name: 'Git'},
       {symbol: SiRender, name: 'Render'},
       {symbol: SiPostman, name: 'Postman'},
       {symbol: BiLogoFigma, name: 'Figma'},
-      {symbol: BiLogoUnity, name: 'Unity'},
-      {symbol: BiLogoSquarespace, name: 'Squarespace'},
     ],
   ]
 
