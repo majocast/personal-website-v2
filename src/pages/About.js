@@ -1,6 +1,6 @@
 import React from 'react';
 import gradPhoto from '../images/alt-marc-photo.jpg';
-import { SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite, SiRuby, SiRubyonrails, SiJest, SiJira, SiRubygems } from 'react-icons/si';
+import { SiGradle, SiAxios, SiExpress, SiRender, SiPostman, SiReactquery, SiMysql, SiVite, SiRuby, SiRubyonrails, SiJest, SiJira, SiRubygems } from 'react-icons/si';
 import {
   BiLogoMongodb,
   BiLogoReact, 
@@ -13,13 +13,13 @@ import {
   BiLogoTailwindCss,
   BiLogoPostgresql,
   BiLogoGithub,
-  BiLogoUnity,
   BiLogoGit,
   BiLogoPython,
   BiLogoDjango,
   BiLogoFigma,
   BiLogoTypescript,
   BiLogoSquarespace,
+  BiLogoSpringBoot,
   BiLogoJquery,
   BiLogoDocker
 } from 'react-icons/bi';
@@ -67,6 +67,8 @@ const About = () => {
       {symbol: SiExpress, name: 'Express'},
       {symbol: BiLogoNodejs, name: 'Node.js'},
       {symbol: BiLogoMongodb, name: 'MongoDB'},
+      {symbol: SiGradle, name: 'Gradle'},
+      {symbol: BiLogoSpringBoot, name: 'Spring Boot'},
       {symbol: BiLogoPostgresql, name: 'PostgreSQL'},
       {symbol: SiMysql, name: 'MySQL'},
       {symbol: BiLogoDjango, name: 'Django'},
@@ -74,12 +76,11 @@ const About = () => {
 
     [
       {symbol: SiRuby, name: 'Ruby'},
-      {symbol: BiLogoJavascript, name: 'JavaScript'},
       {symbol: BiLogoTypescript, name: 'TypeScript'},
       {symbol: BiLogoHtml5, name: 'HTML5'},
       {symbol: BiLogoCss3, name: 'CSS3'},
-      {symbol: BiLogoPython, name: 'Python'},
       {symbol: BiLogoJava, name: 'Java'},
+      {symbol: BiLogoPython, name: 'Python'},
       {symbol: TbSql, name: 'SQL'},
       {symbol: TbBrandCSharp, name: 'C#'},
     ],
@@ -92,7 +93,6 @@ const About = () => {
       {symbol: BiLogoGithub, name: 'GitHub'},
       {symbol: BiLogoGit, name: 'Git'},
       {symbol: SiRender, name: 'Render'},
-      {symbol: SiPostman, name: 'Postman'},
       {symbol: BiLogoFigma, name: 'Figma'},
     ],
   ]

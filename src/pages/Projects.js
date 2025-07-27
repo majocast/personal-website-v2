@@ -4,7 +4,8 @@ import onTheGrind from '../images/projects/onthegrind.jpg';
 import lozanoPowerElectric from '../images/projects/lozanopowerelectric.jpg';
 import eventFinder from '../images/projects/eventfinder.jpg';
 import crisisConnect from '../images/projects/crisisconnect.jpg';
-import { SiAxios, SiExpress, SiReactquery, SiVite } from 'react-icons/si';
+import carebility from '../images/projects/carebility.jpg';
+import { SiAxios, SiExpress, SiReactquery, SiVite, SiWeb3Dotjs } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
 import {
   BiLogoMongodb,
@@ -28,6 +29,13 @@ import { fadeInLeft } from '../helpers/motion-variants';
 const Projects = () => {
   //projects object array that contains all the projects for display
   const projects = [
+    {
+      img: carebility, 
+      href: 'https://www.carebilityagencyca.com/', 
+      techs: [BiLogoReact, BiLogoTypescript, BiLogoHtml5, BiLogoCss3, SiVite, BiLogoFigma, BiLogoSquarespace, SiWeb3Dotjs], 
+      name: 'Carebility Agency Inc', 
+      desc: 'A simplistic and responsive company website created to showcase the services of Carebility Agency Inc., CA. Process included Figma drafting, quality assurance and verification between myself, the founder, and partners of the company, and target audience centric design.'
+    },
     {
       img: lozanoPowerElectric, 
       href: 'https://www.lozanopowerelectric.com/', 
