@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../images/Castro_Marc_Resume2024.pdf';
+import resumePDF from '../images/Castro_Marc_Resume2025.pdf';
 import { BiDownload } from 'react-icons/bi';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
